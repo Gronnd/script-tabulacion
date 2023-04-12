@@ -27,3 +27,9 @@ Return
 !5::
     Send {Right 100}
 Return
+
+; Alt+6: Ir a tipo de profesional desde cualquier punto
+!6::
+    Send {End}
+    Send {Left 7}
+Return
