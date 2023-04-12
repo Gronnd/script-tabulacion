@@ -1,36 +1,31 @@
-; Desactivar el uso de alt izq si solo se pulsa alt izq
-SetTitleMatchMode, 2
-#IfWinActive, SPSS
-!Left::return
 
-; Alt+1: Saltar cinco espacios, para pasar entre letras
-!1::
+; Saltar cinco espacios, para pasar entre letras
+NumpadAdd & Numpad1::
     Send {Right 5}
 Return
 
-; Alt+2: Saltar veinte espacios, para pasar entre características de las viviendas
-!2::
+; Saltar veinte espacios, para pasar entre características de las viviendas
+NumpadAdd & Numpad2::
     Send {Right 20}
 Return
 
-; Alt+3: Ir a tipo de profesional desde cualquier punto
-!3::
-    Send {End}
-    Send {Left 7}
-Return
-
-; Alt+4:Saltar hasta el tipo de rehabiliación desde el tipo de obra
-!4::
+; Saltar hasta el tipo de rehabiliación desde el tipo de obra
+NumpadAdd & Numpad3::
     Send {Right 327}
 Return
 
-; Alt+5: Volver a las características de la vivienda si es una reforma y ha creado una vivienda, desde OTROS_ELEMENTOS
-!5::
+; Volver a las características de la vivienda si es una reforma y ha creado una vivienda, desde OTROS_ELEMENTOS
+NumpadAdd & Numpad4::
     Send {Left 196}
 Return
 
-; Alt+6: Saltar desde G1 (tipos de vivienda) hasta tipo de solado
-!6::
-    Send {End}
-	Send {Left 31}
+; Saltar desde G1 (tipos de vivienda) hasta tipo de solado
+NumpadAdd & Numpad5::
+    Send {Right 100}
+Return
+
+; Presionar Inicio y luego hacer 394 pulsaciones de la flecha a la derecha con NumpadAdd+6
+NumpadAdd & Numpad6::
+    Send {Home}
+    Send {Right 394}
 Return
