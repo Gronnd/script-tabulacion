@@ -18,7 +18,7 @@ Return
     Send {Right 327}
 Return
 
-; Volver a las características de la vivienda si es una reforma y ha creado una vivienda
+; Volver a las características de la vivienda si es una reforma y ha creado una vivienda, desde OTROS_ELEMENTOS
 !4::
     Send {Left 196}
 Return
