@@ -31,5 +31,6 @@ Return
 
 ; Alt+6: Saltar desde G1 (tipos de vivienda) hasta tipo de solado
 !6::
-    Send {Right 100}
+    Send {End}
+	Send {Left 31}
 Return
