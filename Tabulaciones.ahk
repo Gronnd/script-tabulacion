@@ -3,33 +3,33 @@ SetTitleMatchMode, 2
 #IfWinActive, SPSS
 !Left::return
 
-; Saltar cinco espacios, para pasar entre letras
+; Alt+1: Saltar cinco espacios, para pasar entre letras
 !1::
     Send {Right 5}
 Return
 
-; Saltar veinte espacios, para pasar entre características de las viviendas
+; Alt+2: Saltar veinte espacios, para pasar entre características de las viviendas
 !2::
     Send {Right 20}
 Return
 
-; Saltar hasta el tipo de rehabiliación desde el tipo de obra
+; Alt+3: Ir a tipo de profesional desde cualquier punto
 !3::
+    Send {End}
+    Send {Left 7}
+Return
+
+; Alt+4:Saltar hasta el tipo de rehabiliación desde el tipo de obra
+!4::
     Send {Right 327}
 Return
 
-; Volver a las características de la vivienda si es una reforma y ha creado una vivienda, desde OTROS_ELEMENTOS
-!4::
+; Alt+5: Volver a las características de la vivienda si es una reforma y ha creado una vivienda, desde OTROS_ELEMENTOS
+!5::
     Send {Left 196}
 Return
 
-; Saltar desde G1 (tipos de vivienda) hasta tipo de solado
-!5::
-    Send {Right 100}
-Return
-
-; Alt+6: Ir a tipo de profesional desde cualquier punto
+; Alt+6: Saltar desde G1 (tipos de vivienda) hasta tipo de solado
 !6::
-    Send {End}
-    Send {Left 7}
+    Send {Right 100}
 Return
