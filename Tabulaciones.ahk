@@ -29,3 +29,8 @@ NumpadAdd & Numpad6::
     Send {End}
     Send {Left 7}
 Return
+
+; Ir desde cualquier punto al presupuesto
+NumpadAdd & Numpad7::
+    Send {Home}
+    Send {Right 46}
