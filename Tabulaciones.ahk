@@ -11,7 +11,7 @@ Return
 
 ; Saltar desde G1 (tipos de vivienda) hasta tipo de solado
 NumpadAdd & Numpad3::
-    Send {Right 100}
+    Send {Right 99}
 Return
 
 ; Saltar hasta el tipo de rehabiliación desde el tipo de obra, cuando es rehabiliación
