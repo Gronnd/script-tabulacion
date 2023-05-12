@@ -29,4 +29,10 @@ NumpadAdd & Numpad6::
     Send {End}
     Send {Left 7}
 Return
-32	1
+
+
+; Ir ao presuposto
+NumpadAdd & Numpad7::
+    Send {Home}
+    Send {Right 46}
+Return
